@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Правовой Партнёр — профессиональные юридические услуги</title>
+  <meta name="description" content="Помогаем решать правовые вопросы любой сложности: гражданские, семейные, уголовные, корпоративные, налоговые и трудовые споры. Опыт более 7 лет, более 500 успешных дел.">
+  <meta property="og:title" content="Правовой Партнёр — профессиональные юридические услуги">
+  <meta property="og:description" content="Помогаем решать правовые вопросы любой сложности. Опыт, индивидуальный подход и реальные результаты.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg class="svg-sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="ic-column" viewBox="0 0 24 24">
+      <path d="M4.5 4.5h15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M7.2 8v8.5M10.4 8v8.5M13.6 8v8.5M16.8 8v8.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M4.5 19.5h15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-shield" viewBox="0 0 24 24">
+      <path d="M12 3.5 5 6v5.5c0 4.2 2.9 7.6 7 8.9 4.1-1.3 7-4.7 7-8.9V6l-7-2.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="m9 11.8 2.1 2.1L15.2 9.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-users" viewBox="0 0 24 24">
+      <circle cx="9.5" cy="8.5" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M3.8 19c.6-3 2.9-4.7 5.7-4.7s5.1 1.7 5.7 4.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M15.5 5.6a3.2 3.2 0 0 1 0 5.8M17.6 14.6c1.6.7 2.7 2.2 3 4.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-info" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M12 11v5M12 7.8v.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-doc" viewBox="0 0 24 24">
+      <path d="M7 3.5h7.5L19 8v12.5H7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M14 3.5V8h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M9.8 12h6.4M9.8 15h6.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-contract" viewBox="0 0 24 24">
+      <path d="M7 3.5h7.5L19 8v12.5H7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M14 3.5V8h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M9.8 11.5h3.4M9.8 14.5h6.4M9.8 17.5h4.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8.2" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M5 20c.7-3.4 3.4-5.3 7-5.3s6.3 1.9 7 5.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-building" viewBox="0 0 24 24">
+      <path d="M5 20.5V6.5L12 3v17.5M12 20.5h7V9.5l-7-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M8 8.5v.5M8 12v.5M8 15.5v.5M15.2 11.5v.5M15.2 15v.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-scales" viewBox="0 0 24 24">
+      <path d="M12 4v15M8.5 19.5h7M12 6.5 5.5 8M12 6.5 18.5 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3.2 14.2 5.5 8l2.3 6.2c-.6 1.2-1.4 1.8-2.3 1.8-.9 0-1.7-.6-2.3-1.8ZM16.2 14.2 18.5 8l2.3 6.2c-.6 1.2-1.4 1.8-2.3 1.8-.9 0-1.7-.6-2.3-1.8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-plane" viewBox="0 0 24 24">
+      <path d="m3.5 11 16-7-5.5 16-3-6.5-7.5-2.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="m11 13.5 4.5-4.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-lock" viewBox="0 0 24 24">
+      <rect x="5.5" y="10.5" width="13" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24">
+      <path d="M6.2 4h3l1.2 3.6-1.9 1.5a12 12 0 0 0 5.4 5.4l1.5-1.9L19 13.8v3c0 1.2-1 2.2-2.2 2.1C10.3 18.4 5.6 13.7 4.1 7.2 4 6 4.9 4 6.2 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24">
+      <rect x="4" y="6" width="16" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="m4.8 7.5 7.2 5.6 7.2-5.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-tg" viewBox="0 0 24 24">
+      <path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="m8 12.3 7.6-3.6-2 7.4-2.1-2.5L8 12.3z" fill="currentColor"/>
+    </symbol>
+    <symbol id="ic-x" viewBox="0 0 24 24">
+      <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24">
+      <path d="m5 12.5 4.6 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-chevron" viewBox="0 0 24 24">
+      <path d="m6.5 9.5 5.5 5.5 5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-pdf" viewBox="0 0 24 24">
+      <path d="M7 3.5h7.5L19 8v12.5H7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M14 3.5V8h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M9.6 16.5v-4h1.2a1.3 1.3 0 0 1 0 2.6H9.6M13.4 16.5v-4h1.1a2 2 0 0 1 2 2c0 1.1-.9 2-2 2h-1.1z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ic-vk" viewBox="0 0 24 24">
+      <path d="M12.8 16.7c-5.3 0-8.6-3.7-8.7-9.7h2.6c.1 4.5 2.2 6.4 3.8 6.8V7h2.5v3.9c1.5-.2 3.1-2 3.7-3.9h2.5c-.4 2.4-2.1 4.2-3.3 4.9 1.2.6 3.1 2.2 3.8 4.8h-2.7c-.6-1.9-2-3.3-3.9-3.5v3.5h-.3z" fill="currentColor"/>
+    </symbol>
+    <symbol id="ic-wa" viewBox="0 0 24 24">
+      <path d="M12 3.8a8.1 8.1 0 0 0-7 12.2L4 20.2l4.3-1a8.1 8.1 0 1 0 3.7-15.4zm0 1.7a6.4 6.4 0 0 1 0 12.8c-.9 0-1.8-.2-2.6-.6l-2.5.6.6-2.4c-.5-.8-.8-1.7-.8-2.7A6.4 6.4 0 0 1 12 5.5z" fill="currentColor"/>
+      <path d="M9.6 8.7c.2-.4.4-.4.7-.4h.4c.1 0 .3 0 .4.3l.6 1.4c.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6.3.5.9 1.1 1.5 1.4.3.2.5.2.6 0l.5-.5c.2-.2.4-.2.5-.1l1.3.7c.3.1.3.3.3.5 0 .6-.5 1.1-1.2 1.2-.6.1-1.4-.1-2.6-.7-1.5-.9-2.5-2-2.9-3-.2-.5-.3-1-.1-1.4l.5-1z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#top" aria-label="Правовой Партнёр — на главную">
+      <span class="logo__icon"><svg><use href="#ic-column"/></svg></span>
+      <span class="logo__text">
+        <span class="logo__name">Правовой Партнёр</span>
+        <span class="logo__tagline">Юридические услуги</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a class="nav__link is-active" href="#top">Главная</a>
+      <a class="nav__link" href="#napravleniya">Направления</a>
+      <a class="nav__link" href="#keysy">Кейсы</a>
+      <a class="nav__link" href="#stoimost">Стоимость</a>
+      <a class="nav__link" href="#dokumenty">Документы</a>
+      <a class="nav__link" href="#kontakty">Контакты</a>
+    </nav>
+
+    <button class="btn btn--primary btn--pill header__cta" type="button" data-open-modal="request">
+      Получить консультацию
+    </button>
+
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+      <a class="mobile-menu__link is-active" href="#top">Главная</a>
+      <a class="mobile-menu__link" href="#napravleniya">Направления</a>
+      <a class="mobile-menu__link" href="#keysy">Кейсы</a>
+      <a class="mobile-menu__link" href="#stoimost">Стоимость</a>
+      <a class="mobile-menu__link" href="#dokumenty">Документы</a>
+      <a class="mobile-menu__link" href="#kontakty">Контакты</a>
+    </nav>
+    <button class="btn btn--primary btn--block" type="button" data-open-modal="request">Получить консультацию</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__content" data-reveal>
+        <p class="hero__eyebrow">Ваши права — наша работа</p>
+        <h1 class="hero__title">Профессиональные юридические услуги</h1>
+        <p class="hero__lead">Помогаем решать правовые вопросы любой сложности. Опыт, индивидуальный подход и реальные результаты.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary btn--lg" type="button" data-open-modal="request">
+            Оставить заявку
+            <svg class="btn__icon"><use href="#ic-arrow"/></svg>
+          </button>
+          <a class="btn btn--outline btn--lg" href="#napravleniya">Узнать больше</a>
+        </div>
+        <ul class="hero__stats">
+          <li class="stat">
+            <span class="stat__icon"><svg><use href="#ic-shield"/></svg></span>
+            <span class="stat__text">Опыт более 7&nbsp;лет</span>
+          </li>
+          <li class="stat">
+            <span class="stat__icon"><svg><use href="#ic-users"/></svg></span>
+            <span class="stat__text">Более 500 успешных дел</span>
+          </li>
+          <li class="stat">
+            <span class="stat__icon"><svg><use href="#ic-info"/></svg></span>
+            <span class="stat__text">Конфиденциальность гарантируем</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__visual" data-reveal>
+        <div class="hero__arch"></div>
+        <div class="hero__blob"></div>
+        <span class="hero__square"></span>
+        <img class="hero__img" src="img/hero-themis.png" width="476" height="1050" alt="Статуя Фемиды — символ правосудия" fetchpriority="high">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          <p>Сложные ситуации требуют профессиональных решений</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container content-grid">
+    <section class="practice" id="napravleniya">
+      <div class="section-head" data-reveal>
+        <div class="section-head__text">
+          <h2>Направления практики</h2>
+          <p>Мы работаем в ключевых областях права и помогаем как частным лицам, так и бизнесу.</p>
+        </div>
+        <button class="link-more" type="button" data-open-modal="directions">
+          Все направления
+          <svg><use href="#ic-arrow"/></svg>
+        </button>
+      </div>
+
+      <div class="practice-grid">
+        <article class="practice-card" data-reveal data-open-modal="request" data-comment="Интересует направление: Гражданское право" tabindex="0" role="button" aria-label="Гражданское право — оставить заявку">
+          <span class="practice-card__icon"><svg><use href="#ic-doc"/></svg></span>
+          <h3>Гражданское право</h3>
+          <p>Споры, договоры, защита прав потребителей, взыскание долгов</p>
+          <span class="practice-card__arrow"><svg><use href="#ic-arrow"/></svg></span>
+        </article>
+        <article class="practice-card" data-reveal data-open-modal="request" data-comment="Интересует направление: Семейное право" tabindex="0" role="button" aria-label="Семейное право — оставить заявку">
+          <span class="practice-card__icon"><svg><use href="#ic-user"/></svg></span>
+          <h3>Семейное право</h3>
+          <p>Разводы, алименты, раздел имущества, определение места жительства детей</p>
+          <span class="practice-card__arrow"><svg><use href="#ic-arrow"/></svg></span>
+        </article>
+        <article class="practice-card" data-reveal data-open-modal="request" data-comment="Интересует направление: Уголовное право" tabindex="0" role="button" aria-label="Уголовное право — оставить заявку">
+          <span class="practice-card__icon"><svg><use href="#ic-shield"/></svg></span>
+          <h3>Уголовное право</h3>
+          <p>Защита на всех стадиях, обжалование решений, представительство в суде</p>
+          <span class="practice-card__arrow"><svg><use href="#ic-arrow"/></svg></span>
+        </article>
+        <article class="practice-card" data-reveal data-open-modal="request" data-comment="Интересует направление: Корпоративное право" tabindex="0" role="button" aria-label="Корпоративное право — оставить заявку">
+          <span class="practice-card__icon"><svg><use href="#ic-building"/></svg></span>
+          <h3>Корпоративное право</h3>
+          <p>Сопровождение бизнеса, споры между учредителями, регистрация</p>
+          <span class="practice-card__arrow"><svg><use href="#ic-arrow"/></svg></span>
+        </article>
+        <article class="practice-card" data-reveal data-open-modal="request" data-comment="Интересует направление: Налоговое право" tabindex="0" role="button" aria-label="Налоговое право — оставить заявку">
+          <span class="practice-card__icon"><svg><use href="#ic-scales"/></svg></span>
+          <h3>Налоговое право</h3>
+          <p>Налоговые споры, оптимизация, проверки и обжалования</p>
+          <span class="practice-card__arrow"><svg><use href="#ic-arrow"/></svg></span>
+        </article>
+        <article class="practice-card" data-reveal data-open-modal="request" data-comment="Интересует направление: Трудовое право" tabindex="0" role="button" aria-label="Трудовое право — оставить заявку">
+          <span class="practice-card__icon"><svg><use href="#ic-contract"/></svg></span>
+          <h3>Трудовое право</h3>
+          <p>Увольнения, восстановление на работе, трудовые споры</p>
+          <span class="practice-card__arrow"><svg><use href="#ic-arrow"/></svg></span>
+        </article>
+      </div>
+    </section>
+
+    <aside class="side side--a">
+      <div class="card send-card" data-reveal>
+        <div class="send-card__head">
+          <div>
+            <h3>Опишите вашу ситуацию</h3>
+            <p>Кратко расскажите о проблеме — мы подскажем, как действовать</p>
+          </div>
+          <span class="icon-tile icon-tile--flat"><svg><use href="#ic-plane"/></svg></span>
+        </div>
+        <form class="form" id="situation-form" novalidate>
+          <label class="sr-only" for="situation-text">Опишите вашу ситуацию</label>
+          <textarea id="situation-text" name="situation" rows="4" minlength="10" required placeholder="Опишите вашу ситуацию..." data-validate="text"></textarea>
+          <p class="field__error" data-error-for="situation"></p>
+          <button class="btn btn--primary btn--block" type="submit">Отправить</button>
+          <p class="form__note"><svg><use href="#ic-lock"/></svg> Ваши данные под защитой</p>
+        </form>
+        <div class="form-success" hidden>
+          <span class="form-success__icon"><svg><use href="#ic-check"/></svg></span>
+          <h4>Обращение отправлено!</h4>
+          <p>Юрист изучит вашу ситуацию и свяжется с вами в течение 15 минут в рабочее время.</p>
+          <button class="btn btn--outline btn--sm" type="button" data-form-reset>Отправить ещё одно</button>
+        </div>
+      </div>
+
+      <div class="card contact-card" id="kontakty" data-reveal>
+        <h3>Быстрый контакт</h3>
+        <p class="card__lead">Свяжитесь с нами удобным способом и получите первичную консультацию.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="icon-tile"><svg><use href="#ic-phone"/></svg></span>
+            <div>
+              <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+              <span>Ежедневно с 9:00 до 21:00</span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-tile"><svg><use href="#ic-tg"/></svg></span>
+            <div>
+              <a href="https://t.me/pravo_partner" target="_blank" rel="noopener">Telegram</a>
+              <span>@pravo_partner</span>
+            </div>
+          </li>
+          <li>
+            <span class="icon-tile"><svg><use href="#ic-mail"/></svg></span>
+            <div>
+              <a href="mailto:info@pravopartner.ru">info@pravopartner.ru</a>
+              <span>Ответим в течение 15 минут</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="cases" id="keysy">
+      <div class="section-head" data-reveal>
+        <div class="section-head__text">
+          <h2>Наши кейсы</h2>
+          <p>Реальные истории. Конкретные решения. Положительные результаты.</p>
+        </div>
+        <button class="link-more" type="button" data-open-modal="cases-all">
+          Все кейсы
+          <svg><use href="#ic-arrow"/></svg>
+        </button>
+      </div>
+
+      <div class="cases-grid">
+        <article class="case-card" data-reveal data-case
+          data-case-img="img/case-1.jpg"
+          data-case-tag="Гражданское право"
+          data-case-title="Взыскание долга по договору подряда"
+          data-case-text="Клиент — строительная компания — выполнил работы по договору подряда, однако заказчик отказался подписывать акты и оплачивать результат. Мы собрали доказательную базу, направили досудебную претензию, а затем подготовили и подали иск в арбитражный суд. Суд полностью удовлетворил требования клиента."
+          data-case-result="Задолженность 2,4 млн ₽, неустойка и судебные расходы взысканы в полном объёме"
+          data-case-term="4 месяца">
+          <div class="case-card__media">
+            <img src="img/case-1.jpg" alt="Подписание договора подряда" loading="lazy">
+            <span class="badge">Гражданское право</span>
+          </div>
+          <div class="case-card__body">
+            <h3>Взыскание долга по договору подряда</h3>
+            <p>Суд взыскал задолженность в размере 2,4 млн рублей.</p>
+            <button class="link-more link-more--sm" type="button" data-case-open>
+              Подробнее
+              <svg><use href="#ic-arrow"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="case-card" data-reveal data-case
+          data-case-img="img/case-2.jpg"
+          data-case-tag="Семейное право"
+          data-case-title="Определение места жительства ребёнка"
+          data-case-text="После расторжения брака бывший супруг обратился в суд с требованием определить место жительства ребёнка с ним. Мы подготовили правовую позицию, собрали характеристики, заключения и доказательства стабильных условий жизни ребёнка с матерью. Суд принял сторону клиентки."
+          data-case-result="Место жительства ребёнка определено с матерью"
+          data-case-term="3 месяца">
+          <div class="case-card__media">
+            <img src="img/case-2.jpg" alt="Семья на закате" loading="lazy">
+            <span class="badge">Семейное право</span>
+          </div>
+          <div class="case-card__body">
+            <h3>Определение места жительства ребёнка</h3>
+            <p>Дело урегулировано в пользу клиента. Ребёнок остался с матерью.</p>
+            <button class="link-more link-more--sm" type="button" data-case-open>
+              Подробнее
+              <svg><use href="#ic-arrow"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="case-card" data-reveal data-case
+          data-case-img="img/case-3.jpg"
+          data-case-tag="Трудовое право"
+          data-case-title="Восстановление на работе"
+          data-case-text="Клиента уволили по сокращению штата, хотя его должность фактически осталась в штатном расписании компании. Мы подготовили иск о восстановлении на работе, доказали фиктивность сокращения и добились восстановления нарушенных прав."
+          data-case-result="Клиент восстановлен в должности, выплачена компенсация за вынужденный прогул"
+          data-case-term="2 месяца">
+          <div class="case-card__media">
+            <img src="img/case-3.jpg" alt="Работа с документами в офисе" loading="lazy">
+            <span class="badge">Трудовое право</span>
+          </div>
+          <div class="case-card__body">
+            <h3>Восстановление на работе</h3>
+            <p>Клиент восстановлен в должности и получил компенсацию за время вынужденного прогула.</p>
+            <button class="link-more link-more--sm" type="button" data-case-open>
+              Подробнее
+              <svg><use href="#ic-arrow"/></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="side side--b">
+      <div class="card price-card" id="stoimost" data-reveal>
+        <h3>Стоимость консультации</h3>
+        <p class="card__lead">Прозрачные цены, без скрытых платежей.</p>
+        <div class="price-box">
+          <p class="price-box__label">Первичная консультация</p>
+          <div class="price-box__row">
+            <div class="price-box__amount">
+              <span class="price-box__from">от</span>
+              <strong>3 000 ₽</strong>
+              <span class="price-box__unit">(до 60 минут)</span>
+            </div>
+            <button class="btn btn--primary btn--sm" type="button" data-open-modal="request" data-comment="Хочу записаться на первичную консультацию">Записаться</button>
+          </div>
+        </div>
+        <p class="price-card__note">Точная стоимость зависит от сложности вашего вопроса. Оставьте заявку — мы рассчитаем цену индивидуально.</p>
+      </div>
+
+      <div class="card docs-card" id="dokumenty" data-reveal>
+        <span class="icon-tile icon-tile--lg"><svg><use href="#ic-doc"/></svg></span>
+        <div class="docs-card__body">
+          <h3>Документы и FAQ</h3>
+          <p>Полезные материалы и ответы на частые вопросы.</p>
+          <button class="link-more link-more--sm" type="button" data-open-modal="docs">
+            Перейти
+            <svg><use href="#ic-arrow"/></svg>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a class="logo logo--footer" href="#top" aria-label="Правовой Партнёр — на главную">
+      <span class="logo__icon"><svg><use href="#ic-column"/></svg></span>
+      <span class="logo__text">
+        <span class="logo__name">Правовой Партнёр</span>
+        <span class="logo__tagline">Юридические услуги</span>
+      </span>
+    </a>
+
+    <nav class="footer__nav" aria-label="Навигация в подвале">
+      <a href="#top">Главная</a>
+      <a href="#napravleniya">Направления</a>
+      <a href="#keysy">Кейсы</a>
+      <a href="#stoimost">Стоимость</a>
+      <a href="#dokumenty">Документы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+
+    <div class="footer__meta">
+      <p class="footer__copy">© <span id="year">2025</span> Правовой Партнёр. Все права защищены.</p>
+      <div class="socials">
+        <a class="social" href="https://t.me/pravo_partner" target="_blank" rel="noopener" aria-label="Telegram"><svg><use href="#ic-tg"/></svg></a>
+        <a class="social" href="https://vk.com" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg><use href="#ic-vk"/></svg></a>
+        <a class="social" href="https://wa.me/79991234567" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#ic-wa"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно: заявка -->
+<div class="modal" id="modal-request" aria-hidden="true">
+  <div class="modal__overlay" data-modal-close></div>
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-request-title">
+    <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
+      <svg><use href="#ic-x"/></svg>
+    </button>
+    <div class="modal__head">
+      <h3 id="modal-request-title">Получить консультацию</h3>
+      <p>Оставьте заявку — юрист свяжется с вами в течение 15&nbsp;минут в рабочее время.</p>
+    </div>
+    <form class="form form--modal" id="request-form" novalidate>
+      <div class="field">
+        <label for="req-name">Ваше имя</label>
+        <input type="text" id="req-name" name="name" required minlength="2" autocomplete="name" placeholder="Иван Петров" data-validate="name">
+        <p class="field__error" data-error-for="name"></p>
+      </div>
+      <div class="field">
+        <label for="req-phone">Телефон</label>
+        <input type="tel" id="req-phone" name="phone" required autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" data-validate="phone">
+        <p class="field__error" data-error-for="phone"></p>
+      </div>
+      <div class="field">
+        <label for="req-comment">Комментарий <span class="field__hint">(необязательно)</span></label>
+        <textarea id="req-comment" name="comment" rows="2" placeholder="Коротко опишите вашу ситуацию"></textarea>
+      </div>
+      <label class="checkbox">
+        <input type="checkbox" name="consent" required data-validate="consent">
+        <span class="checkbox__box"><svg><use href="#ic-check"/></svg></span>
+        <span class="checkbox__text">Я согласен на обработку персональных данных</span>
+      </label>
+      <p class="field__error" data-error-for="consent"></p>
+      <button class="btn btn--primary btn--block" type="submit">Отправить заявку</button>
+      <p class="form__note"><svg><use href="#ic-lock"/></svg> Ваши данные под защитой</p>
+    </form>
+    <div class="form-success" hidden>
+      <span class="form-success__icon"><svg><use href="#ic-check"/></svg></span>
+      <h4>Заявка отправлена!</h4>
+      <p>Мы свяжемся с вами в течение 15 минут в рабочее время. Спасибо, что выбрали нас.</p>
+      <button class="btn btn--outline btn--sm" type="button" data-modal-close>Отлично</button>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно: кейс -->
+<div class="modal" id="modal-case" aria-hidden="true">
+  <div class="modal__overlay" data-modal-close></div>
+  <div class="modal__dialog modal__dialog--case" role="dialog" aria-modal="true" aria-labelledby="modal-case-title">
+    <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
+      <svg><use href="#ic-x"/></svg>
+    </button>
+    <div class="case-modal__media">
+      <img id="case-modal-img" src="img/case-1.jpg" alt="">
+      <span class="badge" id="case-modal-tag">Гражданское право</span>
+    </div>
+    <div class="modal__head">
+      <h3 id="modal-case-title">Взыскание долга по договору подряда</h3>
+    </div>
+    <p class="case-modal__text" id="case-modal-text"></p>
+    <div class="case-modal__result">
+      <span class="case-modal__result-label">Результат</span>
+      <p id="case-modal-result"></p>
+    </div>
+    <p class="case-modal__meta">Срок ведения дела: <strong id="case-modal-term"></strong></p>
+    <button class="btn btn--primary btn--block" type="button" data-open-modal="request" data-comment="Хочу обсудить похожую ситуацию">Обсудить похожую ситуацию</button>
+  </div>
+</div>
+
+<!-- Модальное окно: все направления -->
+<div class="modal" id="modal-directions" aria-hidden="true">
+  <div class="modal__overlay" data-modal-close></div>
+  <div class="modal__dialog modal__dialog--wide" role="dialog" aria-modal="true" aria-labelledby="modal-directions-title">
+    <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
+      <svg><use href="#ic-x"/></svg>
+    </button>
+    <div class="modal__head">
+      <h3 id="modal-directions-title">Все направления практики</h3>
+      <p>Выберите направление — и мы подготовим решение под вашу ситуацию.</p>
+    </div>
+    <div class="directions-grid">
+      <button class="direction" type="button" data-direction="Гражданское право"><strong>Гражданское право</strong><span>Споры, договоры, взыскание долгов</span></button>
+      <button class="direction" type="button" data-direction="Семейное право"><strong>Семейное право</strong><span>Разводы, алименты, раздел имущества</span></button>
+      <button class="direction" type="button" data-direction="Уголовное право"><strong>Уголовное право</strong><span>Защита на всех стадиях дела</span></button>
+      <button class="direction" type="button" data-direction="Корпоративное право"><strong>Корпоративное право</strong><span>Бизнес, учредители, регистрация</span></button>
+      <button class="direction" type="button" data-direction="Налоговое право"><strong>Налоговое право</strong><span>Споры с ФНС, проверки, обжалования</span></button>
+      <button class="direction" type="button" data-direction="Трудовое право"><strong>Трудовое право</strong><span>Увольнения, трудовые споры</span></button>
+      <button class="direction" type="button" data-direction="Арбитражные споры"><strong>Арбитражные споры</strong><span>Представительство во всех инстанциях</span></button>
+      <button class="direction" type="button" data-direction="Недвижимость и строительство"><strong>Недвижимость и строительство</strong><span>Сделки, долевое строительство, застройщик</span></button>
+      <button class="direction" type="button" data-direction="Наследственное право"><strong>Наследственное право</strong><span>Наследование, оспаривание завещаний</span></button>
+      <button class="direction" type="button" data-direction="Административные споры"><strong>Административные споры</strong><span>Обжалование решений органов власти</span></button>
+      <button class="direction" type="button" data-direction="Миграционное право"><strong>Миграционное право</strong><span>ВНЖ, гражданство, разрешения на работу</span></button>
+      <button class="direction" type="button" data-direction="Взыскание убытков"><strong>Взыскание убытков</strong><span>Ущерб, неустойка, упущенная выгода</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно: все кейсы -->
+<div class="modal" id="modal-cases-all" aria-hidden="true">
+  <div class="modal__overlay" data-modal-close></div>
+  <div class="modal__dialog modal__dialog--wide" role="dialog" aria-modal="true" aria-labelledby="modal-cases-title">
+    <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
+      <svg><use href="#ic-x"/></svg>
+    </button>
+    <div class="modal__head">
+      <h3 id="modal-cases-title">Наши кейсы</h3>
+      <p>Ещё несколько историй клиентов, которым мы помогли.</p>
+    </div>
+    <ul class="case-list">
+      <li>
+        <span class="badge badge--static">Налоговое право</span>
+        <strong>Оспаривание решения налоговой инспекции</strong>
+        <p>Требования инспекции на 1,1 млн рублей признаны недействительными в суде.</p>
+        <button class="link-more link-more--sm" type="button" data-open-modal="request" data-comment="Хочу обсудить похожую ситуацию: оспаривание решения налоговой">Обсудить ситуацию <svg><use href="#ic-arrow"/></svg></button>
+      </li>
+      <li>
+        <span class="badge badge--static">Корпоративное право</span>
+        <strong>Раздел бизнеса между учредителями</strong>
+        <p>Конфликт урегулирован без суда: заключено корпоративное соглашение, бизнес сохранён.</p>
+        <button class="link-more link-more--sm" type="button" data-open-modal="request" data-comment="Хочу обсудить похожую ситуацию: корпоративный спор">Обсудить ситуацию <svg><use href="#ic-arrow"/></svg></button>
+      </li>
+      <li>
+        <span class="badge badge--static">Гражданское право</span>
+        <strong>Защита прав потребителя</strong>
+        <p>Взысканы стоимость некачественного товара, неустойка и штраф — 380 000 рублей.</p>
+        <button class="link-more link-more--sm" type="button" data-open-modal="request" data-comment="Хочу обсудить похожую ситуацию: защита прав потребителя">Обсудить ситуацию <svg><use href="#ic-arrow"/></svg></button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Модальное окно: документы и FAQ -->
+<div class="modal" id="modal-docs" aria-hidden="true">
+  <div class="modal__overlay" data-modal-close></div>
+  <div class="modal__dialog modal__dialog--wide" role="dialog" aria-modal="true" aria-labelledby="modal-docs-title">
+    <button class="modal__close" type="button" data-modal-close aria-label="Закрыть окно">
+      <svg><use href="#ic-x"/></svg>
+    </button>
+    <div class="modal__head">
+      <h3 id="modal-docs-title">Документы и FAQ</h3>
+      <p>Полезные материалы и ответы на частые вопросы.</p>
+    </div>
+    <div class="docs-list">
+      <a class="doc-item" href="docs/dogovor-na-uslugi.pdf" target="_blank" rel="noopener">
+        <span class="icon-tile"><svg><use href="#ic-pdf"/></svg></span>
+        <span class="doc-item__body">
+          <strong>Договор на оказание юридических услуг</strong>
+          <span>PDF · 48 КБ</span>
+        </span>
+      </a>
+      <a class="doc-item" href="docs/dosudebnaya-pretenziya.pdf" target="_blank" rel="noopener">
+        <span class="icon-tile"><svg><use href="#ic-pdf"/></svg></span>
+        <span class="doc-item__body">
+          <strong>Образец досудебной претензии</strong>
+          <span>PDF · 44 КБ</span>
+        </span>
+      </a>
+      <a class="doc-item" href="docs/soglasie-na-obrabotku-dannyh.pdf" target="_blank" rel="noopener">
+        <span class="icon-tile"><svg><use href="#ic-pdf"/></svg></span>
+        <span class="doc-item__body">
+          <strong>Согласие на обработку персональных данных</strong>
+          <span>PDF · 42 КБ</span>
+        </span>
+      </a>
+    </div>
+    <h4 class="faq__title">Частые вопросы</h4>
+    <div class="faq">
+      <div class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false">
+          Сколько стоит первичная консультация?
+          <svg><use href="#ic-chevron"/></svg>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">
+            <p>Первичная консультация длится до 60 минут и стоит от 3 000 ₽. Точная стоимость зависит от сложности вопроса — мы назовём её заранее, до начала работы.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false">
+          Как проходит работа по делу?
+          <svg><use href="#ic-chevron"/></svg>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">
+            <p>После консультации мы анализируем документы, предлагаем стратегию и фиксируем стоимость в договоре. Дальше ведём дело до результата и держим вас в курсе на каждом этапе.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false">
+          Вы работаете только в вашем городе?
+          <svg><use href="#ic-chevron"/></svg>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">
+            <p>Нет, мы работаем по всей России дистанционно: онлайн-консультации, электронный документооборот и представительство в судах по доверенности.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question" type="button" aria-expanded="false">
+          Что нужно для первой консультации?
+          <svg><use href="#ic-chevron"/></svg>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">
+            <p>Достаточно описать ситуацию — документы можно приложить позже. Если материалы уже есть, возьмите их с собой: так консультация будет точнее и полезнее.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
